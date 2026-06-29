@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+        <body>
+            <h1>Workshop 3.1</h1>
+            
+            <script src="script.js"></script>
+            
+            <script>
+                let student = "Sunthorapod";
+                let mark1 = 72
+                let mark2 = 64
+                let mark3 = 48
+                num  = 3;
+                let average = (mark1 + mark2 + mark3)/num;
+                
+                document.write("<h2>",student,"</h2>");
+                document.write("<h2>","Score1",mark1,"</h2>");
+                document.write("<h2>","Score2",mark2,"</h2>");
+                document.write("<h2>","Score3",mark3,"</h2>");
+                document.write("<h2>","average",average,"</h2>");
+
+                let grade = null;
+                if(average >= 80){
+                    grade="A"
+                }else if(average >= 70){
+                    grade="B"
+                }
+                else if(average >= 60){
+                    grade="C"
+                }
+                else if(average >= 50){
+                    grade="D"
+                }
+                else {
+                    grade="F"
+                }
+
+                document.write("<h1>","Grade",grade,"</h1>")
+            </script>
+
+        </body>
+</html>
+    

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+    <html>
+        <head></head>
+        <body>
+            <h1>Fruit Market</h1>
+            <script>
+                let fruit=["Apple","Grape","Orange","Banana","Durian"];
+                let price=[20,120,30,15,130];
+                let unit=["กิโล","กิโล","กิโล","กิโล","กิโล"];
+                let quantity=[5,10,15,20,10];
+                sum = 0;
+                document.write("<table>");
+                document.write("<tr><th>ผลไม้</th><th>ราคาต่อหน่วย</th><th>จำนวน</th><th>รวม</th></tr>");
+                for(i=0;i<fruit.length;i++){
+                    total = price[i] * quantity[i];
+                    sum+=total;
+                    document.write("<tr><td><img src = 'img/",i+1,".jpg' width=100></td><td>",fruit[i],"</td><td>",price[i],"</td><td>",unit[i],"</td><td>",quantity[i],"</td></tr>");
+                    
+                    document.write("<br>");
+                }
+                document.write("</table>");
+                document.write("<h2>รวมทั้งสิ้น"," ",sum," ","บาท</h2>");
+            </script>
+        </body>
+    </html>
+
